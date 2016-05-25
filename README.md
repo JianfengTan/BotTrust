@@ -1,15 +1,17 @@
 # Google Code Jam's problem : BotTrust
 CISC 3150 Project 2 BotTrust-- Jianfeng Tan
 
-#Problem
+##Problem
 
 Blue and Orange are friendly robots. An evil computer mastermind has locked them up in separate hallways to test them, and then possibly give them cake.
 
-Each hallway contains 100 buttons labeled with the positive integers {1, 2, ..., 100}. Button k is always k meters from the start of the hallway, and the robots both begin at button 1. Over the period of one second, a robot can walk one meter in either direction, or it can press the button at its position once, or it can stay at its position and not press the button. To complete the test, the robots need to push a certain sequence of buttons in a certain order. Both robots know the full sequence in advance. How fast can they complete it?
+Each hallway contains 100 buttons labeled with the positive integers `{1, 2, ..., 100}`. Button `k` is always `k` meters from the start of the hallway, and the robots both begin at button 1. Over the period of one second, a robot can walk one meter in either direction, or it can press the button at its position once, or it can stay at its position and not press the button. To complete the test, the robots need to push a certain sequence of buttons in a certain order. Both robots know the full sequence in advance. How fast can they complete it?
 
 For example, let's consider the following button sequence:
 
-   O 2, B 1, B 2, O 4
+```
+  O 2, B 1, B 2, O 4
+```
 
 Here, O 2 means button 2 in Orange's hallway, B 1 means button 1 in Blue's hallway, and so on. The robots can push this sequence of buttons in 6 seconds using the strategy shown below:
 
@@ -24,7 +26,7 @@ Time | Orange           | Blue
 
 Note that Blue has to wait until Orange has completely finished pushing O 2 before it can start pushing B 1.
 
-#Input
+##Input
 
 The first line of the input gives the number of test cases, T. T test cases follow.
 
@@ -44,13 +46,36 @@ Large dataset
 1 ≤ T ≤ 100.
 1 ≤ N ≤ 100.
 
+**Small dataset**
+
+1 ≤ **T** ≤ 20.
+1 ≤ **N** ≤ 10.
+
+**Large dataset**
+
+1 ≤ **T** ≤ 100.
+1 ≤ **N** ≤ 100.
+
+## Sample
+
+```
+Input               Output
+3
+4 O 2 B 1 B 2 O 4   Case #1: 6
+3 O 5 O 8 B 100     Case #2: 100
+2 B 2 B 1           Case #3: 4
+```
 
 
-# Solution
+## Solution
 Test.class
 
-#Dataset
-A-small-practice.in and A-large-practice.in
+##Dataset
+* Small file [A-small-practice.in](A-small-practice.in)
+* Large file [A-large-practice.in](A-large-practice.in)
 
 
+## Run the program pictures
 
+![small file](small.png)
+![small file](large.png)
